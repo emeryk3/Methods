@@ -13,3 +13,8 @@ A method is a sequence of statements and are declared within a class. Methods ar
 
  ## Variables in Method:
 You can create variables in methods; however before using a method you must declare it, and that variable can only be used within that method. This is called scope and the variables are called local variables.
+ 
+## Passing Parameters
+The previous example is simple; it has no return value or arguments to pass. More complex methods have arguments and return values. In the next example we will create a short program which calculates product cost after VAT (Value After Tax) has been added.
+The next example names the method VAT with the data type double and two parameters: productCost and currentRate, which is the current VAT rate (20%). The data types for these are double because the result can be a floating point number, such as £32.50.
+To calculate product cost after VAT has been added you use the percentage multiplier, so: (VAT rate + 100) / 100 e.g. (20 + 100) / 100 = 1.2. Remember you need the brackets to show which calculation you want to do first (in this case addition). Next we return the value, which is productCost multiplied by VAT rate
