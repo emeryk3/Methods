@@ -25,6 +25,7 @@ namespace Methods
 
         static void Main(string[] args)
         {
+            /*
             Console.WriteLine("Enter product cost: ");
             string pC = Console.ReadLine();
 
@@ -35,6 +36,10 @@ namespace Methods
 
             Console.WriteLine("Total cost is {0:C}", result);
             Console.ReadLine();
+            */
+
+            Games(new[] { "GTA 5", "BF4", "Fifa", "Uncharted" });
+            Console.ReadLine();
         }
 
         // Passing Parameters
@@ -43,6 +48,23 @@ namespace Methods
         {
             double CR = (currentRate + 100) / 100;
             return productCost * CR;
+        }
+
+        /// <summary>
+        /// Prints Out a list of Games
+        /// </summary>
+        /// <param name="newGames">Specify an array of games</param>
+        static void Games(string[] newGames)
+        {
+            foreach (var g in newGames)
+            {
+                Console.WriteLine(g);
+            }
+        }
+
+        static void Games(string newGames)
+        {
+            Console.WriteLine(newGames);
         }
 
 
